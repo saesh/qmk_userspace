@@ -5,3 +5,4 @@ ifneq ($(strip $(NO_SECRETS)), yes)
 endif
 
 DEFERRED_EXEC_ENABLE = yes
+EXTRAFLAGS += -flto
