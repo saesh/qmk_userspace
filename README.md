@@ -9,6 +9,12 @@ Compile firmwares defined in `qmk.json`
 qmk userspace-compile
 ```
 
+Compile specific firmware
+
+```
+qmk compile -kb evyd13/plain60 -km saesh
+```
+
 Flash specific firmware
 
 ```

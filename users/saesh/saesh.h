@@ -7,6 +7,7 @@ enum user_custom_keys {
   KC_SECRET_2,
   KC_SECRET_3,
   KC_SECRET_4,
-  KC_SECRET_5
+  KC_SECRET_5,
+  SS_MARKDOWNCODEBLOCK // send string Markdown code block
 };
 
