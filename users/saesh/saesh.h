@@ -17,7 +17,8 @@ enum _layer {
   _BASE,
   _FN,
   _FN2,
-  _MS
+  _MS,
+  _PRG
 };
 
 enum {
