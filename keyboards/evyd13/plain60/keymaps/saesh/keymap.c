@@ -8,24 +8,12 @@
 // markdown code block snippet
 #define KC_CDBLK SS_MARKDOWNCODEBLOCK
 
-// Left-hand home row mods
-#define GUI_A LGUI_T(KC_A)
-#define ALT_S LALT_T(KC_S)
-#define SFT_D LSFT_T(KC_D)
-#define CTL_F LCTL_T(KC_F)
-
-// Right-hand home row mods
-#define CTL_J RCTL_T(KC_J)
-#define SFT_K RSFT_T(KC_K)
-#define ALT_L ALGR_T(KC_L)
-#define GUI_SCLN RGUI_T(KC_SCLN)
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_BASE] = LAYOUT_60_hhkb(
    KC_ESC, TD(K1_F1), TD(K2_F2), TD(K3_F3), TD(K4_F4), TD(K5_F5), TD(K6_F6), TD(K7_F7), TD(K8_F8), TD(K9_F9), TD(K0_F10), TD(Kmin_F11), TD(Keq_F12), KC_BSLS, KC_GRV, \
    KC_TAB,      KC_Q,      KC_W,      KC_E,      KC_R,      KC_T,      KC_Y,      KC_U,      KC_I,      KC_O,       KC_P,      KC_LBRC,     KC_RBRC, KC_BSPC, \
-  TD(T_1),     GUI_A,     ALT_S,     SFT_D,     CTL_F,      KC_G,      KC_H,     CTL_J,     SFT_K,     ALT_L,   GUI_SCLN,      KC_QUOT,               KC_ENT, \
+  TD(T_1),      KC_A,      KC_S,      KC_D,      KC_F,      KC_G,      KC_H,      KC_J,      KC_K,      KC_L,    KC_SCLN,      KC_QUOT,               KC_ENT, \
   KC_LSFT,                 KC_Z,      KC_X,      KC_C,      KC_V,      KC_B,      KC_N,      KC_M,   KC_COMM,     KC_DOT,      KC_SLSH,     KC_RSFT, MO(_FN), \
              KC_LGUI,   KC_LALT,                LT(_PRG, KC_SPC),                                                                 KC_ALGR, _______),
 
@@ -45,15 +33,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_MS] = LAYOUT_60_hhkb(
   _______,   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-  _______,   _______, KC_WH_U ,KC_BTN4, KC_BTN5, _______, _______, _______, KC_MS_U, _______, _______, _______, _______, _______, \
-  TD(T_1),   _______, KC_WH_D, KC_BTN1, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_R, _______, _______,          _______, \
-  _______,            _______, _______, KC_BTN2, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
+  _______,   _______, KC_MS_U ,KC_BTN1, KC_BTN2, _______, _______, KC_BTN4, KC_BTN5, _______, _______, _______, _______, _______, \
+  TD(T_1),   KC_MS_L, KC_MS_D, KC_MS_R, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, _______, _______,          _______, \
+  _______,            _______, _______, KC_BTN4, KC_BTN5, _______, KC_BTN1, KC_BTN2, _______, _______, _______, _______, _______, \
              _______, _______,                   _______,                                              _______, _______),
 
 [_PRG] = LAYOUT_60_hhkb(
   _______,   _______, _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, _______, _______, \
   _______,   _______, _______, _______, C(KC_C), C(KC_V), _______,  KC_DEL,    KC_BSPC, _______,  _______, _______, _______, _______, \
-  _______,   _______, _______, KC_LCTL, KC_LALT, _______, _______, S(KC_9),    KC_LBRC, _______, _______, _______,          _______, \
+  _______,   _______, KC_LSFT, KC_LALT, KC_LCTL, _______, _______, S(KC_9),    KC_LBRC, _______, _______, _______,          _______, \
   _______,            _______, _______, _______, _______, _______,  KC_ENT, S(KC_LBRC), _______, _______, _______, _______, _______, \
              _______, _______,                   _______,                                              _______, _______),
 
