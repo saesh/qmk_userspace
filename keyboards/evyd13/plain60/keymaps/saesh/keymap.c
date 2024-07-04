@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_FN2] = LAYOUT_60_hhkb(
   _______,   KC_SEC1, KC_SEC2, KC_SEC3, XXXXXXX, XXXXXXX, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-  _______,   _______, _______, _______, _______, _______, _______, _______, _______, _______,  KC_PWR, _______, _______, _______, \
+  _______,   _______, _______,TO(_ENGR), _______, _______, _______, _______, _______, _______,  KC_PWR, _______, _______, _______, \
   _______,   _______, KC_SLEP, _______, _______, _______, _______, KC_JIGG, _______, _______, _______, _______,          _______, \
   _______,            _______, _______, KC_CALC, _______, QK_BOOT, _______, _______, _______, _______, _______, _______, _______, \
              _______, _______,                   _______,                                              _______, _______),
@@ -44,5 +44,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______,   _______, KC_LSFT, KC_LALT, KC_LCTL, _______, _______, S(KC_9),    KC_LBRC, _______, _______, _______,          _______, \
   _______,            _______, _______, _______, _______, _______,  KC_ENT, S(KC_LBRC), _______, _______, _______, _______, _______, \
              _______, _______,                   _______,                                              _______, _______),
+
+[_ENGR] = LAYOUT_60_hhkb(
+   KC_ESC,   KC_1,       KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_LBRC, KC_RBRC, KC_BSLS, KC_GRV, \
+   KC_TAB,   KC_B,       KC_Y,    KC_O,    KC_U, KC_QUOT, KC_SCLN,    KC_L,    KC_D,    KC_W,    KC_V,    KC_Z,  KC_EQL, KC_BSPC, \
+  KC_LCTL,   KC_C,       KC_I,    KC_E,    KC_A, KC_COMM,  KC_DOT,    KC_H,    KC_T,    KC_S,    KC_N,    KC_Q,           KC_ENT, \
+  KC_LSFT,               KC_G,    KC_X,    KC_J,    KC_K, KC_MINS, KC_SLSH,    KC_R,    KC_M,    KC_F,    KC_P, KC_RSFT, TO(_BASE), \
+             KC_LGUI, KC_LALT,                KC_SPC,                                                  KC_ALGR, _______),
 
 };
