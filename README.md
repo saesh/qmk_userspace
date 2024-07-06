@@ -15,8 +15,16 @@ Compile specific firmware
 qmk compile -kb evyd13/plain60 -km saesh
 ```
 
+```
+qmk compile -kb kingly_keys/romac -km saesh
+```
+
 Flash specific firmware
 
 ```
 qmk flash -kb evyd13/plain60 -km saesh
+```
+
+```
+qmk flash -kb kingly_keys/romac -km saesh
 ```
